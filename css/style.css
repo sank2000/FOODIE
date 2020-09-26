@@ -197,6 +197,7 @@ body {
 /* COLORS */
 .hero {
   height: 110vh;
+  min-height: 75rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(126, 72, 81, 0.411)), url(/image/hero-bg.jpg);
   background-position: center;
   background-attachment: fixed;
@@ -274,6 +275,10 @@ body {
   margin-left: auto;
 }
 
+.hero-btn-1 :hover {
+  background-color: black;
+}
+
 .hero-btn-2 {
   width: 80%;
   padding: 1rem 1.5rem;
@@ -292,6 +297,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   line-height: 4rem;
+  letter-spacing: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -300,6 +306,7 @@ body {
 
 .working h3 {
   text-decoration: underline;
+  font-weight: 500;
 }
 
 .more {
