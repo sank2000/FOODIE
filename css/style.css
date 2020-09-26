@@ -110,9 +110,28 @@ body {
 }
 
 /* COLORS */
+.btn-big:link, .btn-big:active {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 4rem;
+  border: 3px solid #fff;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.btn-big:hover {
+  color: black;
+  border-color: #fff;
+  background-color: #fff;
+}
+
+/* COLORS */
 .nav {
   position: absolute;
   width: 100%;
+  z-index: 9999;
 }
 
 .nav-container {
@@ -175,9 +194,148 @@ body {
   color: #fff;
 }
 
+/* COLORS */
 .hero {
   height: 110vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(126, 72, 81, 0.411)), url(/image/hero-bg.jpg);
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
+  position: relative;
+}
+
+.hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-container h3 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 1.5rem;
+}
+
+.working {
+  background-image: url(/image/black-bg.jpg);
+  height: 50rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.working h3 {
+  text-decoration: underline;
+}
+
+.more {
+  background-image: url(/image/bg-1.jpg);
+  height: 40rem;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addition {
+  background-image: url(/image/bg-2.jpg);
+  height: 40rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.final {
+  background-image: url(/image/final-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 15rem 0;
+}
+
+.final-content {
+  max-width: 110rem;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .final-content {
+    max-width: 90%;
+  }
+}
+
+.final-content-1 {
+  text-align: right;
+  width: 45%;
+  margin-bottom: 3rem;
+  line-height: 5rem;
+  letter-spacing: 1rem;
+}
+
+.final-content-1 h4 {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .final-content-1 {
+    width: 100%;
+  }
+}
+
+.final-content-2 {
+  width: 45%;
+  margin-left: auto;
+}
+
+.final-content-2 h6 {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .final-content-2 {
+    width: 100%;
+  }
+}
+
+.final-map {
+  width: 90%;
+  height: 30rem;
+  margin-left: 5%;
+  margin-top: 8rem;
+}
+
+.footer {
+  background-color: #000;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-top {
+  margin-bottom: 5rem;
+  font-size: 4rem;
+}
+
+.footer-top :not(:last-child) {
+  margin-right: 5rem;
+}
+
+.footer-bottom h6 {
+  font-weight: 400;
 }
